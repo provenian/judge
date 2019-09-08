@@ -164,7 +164,7 @@ const main = async () => {
         }
       }
     ]),
-    family: "service"
+    family: `${config.service}-${config.stage}-judge`
   });
 
   const cluster = new aws.ecs.Cluster("judge-cluster", {
